@@ -13,7 +13,7 @@ const HeroSection = () => {
 
       <Header />
       <Navbar1 />
-      <div className="relative w-full h-screen bg-[#01b7df] overflow-hidden">
+      <div className="relative w-full h-screen bg-[#01b7df] overflow-x-hidden">
         {/* Image */}
         <div className="absolute right-0 top-0 h-full w-1/2 hidden md:block">
           <Image
@@ -64,13 +64,13 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center pt-[80px] mb-[48px] bg-[#FAFAFA]">
+      <div className="flex flex-col max-w-full overflow-x-hidden items-center justify-center pt-[80px] mb-[48px] bg-[#FAFAFA]">
         <h3 className="text-2xl font-bold text-[#252B42]">EDITOR'S PICK</h3>
         <span className="text-[#737373] text-sm text-center mt-2">
           Problems trying to resolve the conflict between
         </span>
 
-        <div className="mt-[48px] flex flex-col gap-4 md:flex-row">
+        <div className="mt-[48px] flex flex-col  md:flex-row gap-4 px-4 max-w-full">
           {/* MEN Section */}
           <div className="relative">
             <Image
@@ -104,7 +104,7 @@ const HeroSection = () => {
             {/* ACCESSORIES */}
             <div className="relative">
               <Image
-                src={'/Images/filter (2).png'}
+                src={'/Images/media bg-cover.png'}
                 alt="filter (2).png"
                 width={240}
                 height={242}
@@ -141,7 +141,9 @@ const HeroSection = () => {
         </div>
 
         <div className='flex justify-around items-center gap-[29.5px] flex-wrap  ' >
+
           {/* Rendering ProductCards component */}
+
           <ProductCard imageSrc={'/Images/product-cover-5.png'}
             productName={'TurtleNeck Jumper'}
             department={'Women Casual OutWear'}
@@ -223,12 +225,13 @@ const HeroSection = () => {
           </div>
 
           {/* Image Section */}
+
           <div className="flex justify-center items-center mt-8 lg:mt-0">
             <Image
-              src="/Images/col-md-6.png" 
+              src="/Images/col-md-6.png"
               alt="Vita Classic Product"
-              width={300} // Dynamically adjust width for mobile
-              height={600} // Dynamically adjust height for mobile
+              width={300}
+              height={600}
               className="w-auto h-auto max-w-full"
             />
           </div>
@@ -265,16 +268,21 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className='text-center mt-[112px] mb-[80px] flex flex-col items-center gap-2'>
-          <span className='text-[#23A6F0] text-sm tracking-wider  font-bold'>Practice Advice</span>
-          <h3 className='text-[40px] font-bold text-[#252B42]'>Featured Posts</h3>
-          <p className='text-[#737373] text-sm'>Problems trying to resolve the conflict between <br />
+        {/* Featured Posts Section */}
+        <div className='text-center px-4 md:px-8 mt-20 md:mt-[112px] mb-10 md:mb-[80px] flex flex-col items-center gap-2 max-w-screen-xl mx-auto'>
+          <span className='text-[#23A6F0] text-sm tracking-wider font-bold'>Practice Advice</span>
+          <h3 className='text-2xl md:text-[40px] font-bold text-[#252B42]'>Featured Posts</h3>
+          <p className='text-[#737373] text-sm px-4'>
+            Problems trying to resolve the conflict between
+            <span className='hidden md:inline'><br /></span>
             the two major realms of Classical physics: Newtonian mechanics
           </p>
         </div>
 
-        <div className='flex justify-between items-center gap-4 flex-wrap'>
-          <ArticleCard imageSrc={'/Images/unsplash_hHdHCfAifHU (1).png'}
+        {/* Article Cards Container */}
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-4 md:px-8 max-w-screen-xl mx-auto'>
+          <ArticleCard
+            imageSrc={'/Images/unsplash_hHdHCfAifHU (1).png'}
             altText={'unsplash_hHdHCfAifHU (1).png'}
             title={' Loudest à la Madison #1 (L integral)'}
             description={' We focus on ergonomics and meeting We focus on ergonomics and meeting  Its only a keystroke away.'}
@@ -282,7 +290,8 @@ const HeroSection = () => {
             comments={10}
           />
 
-          <ArticleCard imageSrc={'/Images/unsplash_tVEqStC2uz8.png'}
+          <ArticleCard
+            imageSrc={'/Images/unsplash_tVEqStC2uz8.png'}
             altText={'unsplash_tVEqStC2uz8.png'}
             title={' Loudest à la Madison #1 (L integral)'}
             description={' We focus on ergonomics and meeting We focus on ergonomics and meeting  Its only a keystroke away.'}
@@ -290,15 +299,14 @@ const HeroSection = () => {
             comments={10}
           />
 
-          <ArticleCard imageSrc={'/Images/unsplash_dEGu-oCuB1Y.png'}
+          <ArticleCard
+            imageSrc={'/Images/unsplash_dEGu-oCuB1Y.png'}
             altText={'unsplash_dEGu-oCuB1Y.png'}
             title={' Loudest à la Madison #1 (L integral)'}
             description={' We focus on ergonomics and meeting We focus on ergonomics and meeting  Its only a keystroke away.'}
             date={'22 April 2021'}
             comments={10}
           />
-
-
         </div>
 
 

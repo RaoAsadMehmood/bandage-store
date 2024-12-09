@@ -37,11 +37,11 @@ const Navbar1 = () => {
                                     </select>
                                 </Link>
                             </li>
-                            <li><Link href="/">About</Link></li>
+                            <li><Link href="/about">About</Link></li>
                             <li><Link href="/">Blog</Link></li>
                             <li><Link href="/">Contact</Link></li>
                             <li>
-                               <Link href="ProductList.tsx"> Pages </Link>   
+                               <Link href="/productpage"> Pages </Link>   
                             </li>
                         </ul>
                     </div>

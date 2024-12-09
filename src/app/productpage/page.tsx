@@ -14,10 +14,10 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
 import { BsCardChecklist } from "react-icons/bs";
-import ClothsCard from './ClothsCard';
 import { HiMiniSquares2X2 } from "react-icons/hi2";
-import Footer from './Footer';
-import ProductCard from './ProductCard';
+import ClothsCard from '../components/ClothsCard';
+import Footer from '../components/Footer';
+import ProductCard from '../components/ProductCard';
 const ProductList = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -83,10 +83,10 @@ const ProductList = () => {
                                     </select>
                                 </Link>
                             </li>
-                            <li><Link href="/">About</Link></li>
+                            <li><Link href="/about">About</Link></li>
                             <li><Link href="/">Blog</Link></li>
                             <li><Link href="/">Contact</Link></li>
-                            <li><Link href="/">Pages</Link></li>
+                            <li><Link href="/productpage">Pages</Link></li>
                         </ul>
                     </div>
 
@@ -269,7 +269,24 @@ const ProductList = () => {
 
             </div>
 
-           
+            <div className="flex justify-center space-x-2 my-[48px]   ">
+                <button className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded hover:scale-110 active:scale-95 active:bg-blue-600 underline">
+                    First
+                </button>
+                <button className="px-4 py-2  bg-gray-200  hover:bg-blue rounded hover:scale-110 active:scale-95  active:bg-blue-600 underline">
+                    1
+                </button>
+                <button className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded hover:scale-110 active:scale-95  active:bg-blue-600 underline">
+                    2
+                </button>
+                <button className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded hover:scale-110 active:scale-95  active:bg-blue-600 underline">
+                    3
+                </button>
+                <button className="px-4 py-2 bg-gray-200 hover:bg-gray-300 rounded hover:scale-110 active:scale-95  active:bg-blue-600 underline">
+                    Next
+                </button>
+            </div>
+
 
         </>
     );

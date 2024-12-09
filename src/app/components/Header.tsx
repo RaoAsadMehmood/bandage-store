@@ -9,7 +9,8 @@ import { FaTwitter } from "react-icons/fa";
 const Header = () => {
     return (
         <>
-            <div className='bg-[#252b42] px-6 py-2 mb-3 text-white h-11 w-full hidden md:flex items-center justify-between font-medium text-sm'>
+            <div className='bg-[#252b42] px-6 py-2 mb-3 text-white h-11 w-full hidden md:flex items-center
+             justify-between font-medium text-sm'>
                 {/* Left Section - Hidden on mobile */}
                 <div className='hidden md:flex items-center gap-4'>
                     <div className='flex items-center gap-1'>
