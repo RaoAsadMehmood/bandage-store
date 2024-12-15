@@ -18,7 +18,7 @@ const CLothsCard: React.FC<CardProps> = ({ imageSrc }) => {
 
             {/* Hover Overlay */}
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center
-             justify-center opacity-0 hover:scale-110 active:scale-100 hover:opacity-100 transition-opacity duration-300">
+             justify-center opacity-0 hover:scale-110 active:scale-100  hover:opacity-100 transition-opacity duration-300">
                 <h3 className="text-white font-bold text-xl">Cloths Card</h3>
             </div>
         </div>

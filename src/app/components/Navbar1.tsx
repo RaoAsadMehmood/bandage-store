@@ -73,8 +73,8 @@ const Navbar1 = () => {
                     <div className="md:hidden mt-[100.6px] pb-4 ">
                         <ul className="flex flex-col  justify-center items-center gap-4 text-[#737373] text-[30px]">
                             <li><Link href="/">Home</Link></li>
-                            <li><Link href="/">Product</Link></li>
-                            <li><Link href="/">Pricing</Link></li>
+                            <li><Link href="/productpage">Product</Link></li>
+                            <li><Link href="/about">About</Link></li>
                             <li><Link href="/">Contact</Link></li>
                         </ul>
                     </div>
