@@ -19,7 +19,7 @@ const Header = () => {
                     </div>
                     <div className='flex items-center gap-1'>
                         <CiMail size={16} />
-                        <p>michelle.rivera@example.com</p>
+                        <a href="mailto:michelle.rivera@example.com"><p>michelle.rivera@example.com</p></a> 
                     </div>
                 </div>
                 {/* Center Section - Hidden on mobile */}

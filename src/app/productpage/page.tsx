@@ -72,21 +72,13 @@ const ProductList = () => {
                             <li><Link href="/">Home</Link></li>
                             <li>
                                 <Link href="/">
-                                    <select
-                                        name="Shop"
-                                        id="Shop"
-                                        className="bg-transparent text-[#737373] border-none focus:ring-0 cursor-pointer"
-                                    >
-                                        <option>Shop</option>
-                                        <option>Category 1</option>
-                                        <option>Category 2</option>
-                                    </select>
+                                    Shop
                                 </Link>
                             </li>
                             <li><Link href="/about">About</Link></li>
                             <li><Link href="/">Blog</Link></li>
                             <li><Link href="/">Contact</Link></li>
-                            <li><Link href="/productpage">Pages</Link></li>
+                            <li><Link href="/pricing">Pricing</Link></li>
                         </ul>
                     </div>
 

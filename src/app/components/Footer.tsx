@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io5";
@@ -74,7 +75,7 @@ const Footer = () => {
                                     placeholder="Your Email"
                                     className="w-full max-w-[166px] px-3 py-[10px] outline-none border border-r-0 border-gray-300 rounded-l-md text-gray-500"
                                 />
-                                <button className="bg-[#23A6F0] text-white rounded-r-md px-[10px] py-[10px] whitespace-nowrap">
+                                <button className="bg-[#23A6F0] text-white rounded-r-md px-[10px] py-[10px] active:scale-95 transition-transform whitespace-nowrap">
                                     Subscribe
                                 </button>
                             </div>
@@ -86,7 +87,7 @@ const Footer = () => {
                 </div>
                 <div className="mt-8 py-6 border-t px-14 bg-[#fafafa] w-full border-gray-200">
                     <p className="text-gray-600">
-                        Made With Love By Finland All Right Reserved
+                        Made With 🖤 by <Link href={"https://www.linkedin.com/in/rao-asad-mehmood"} target='blank'><b>Rao Asad Mehmood </b></Link>  All Right Reserved
                     </p>
                 </div>
             </footer>

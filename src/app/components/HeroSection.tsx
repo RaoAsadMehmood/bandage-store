@@ -6,7 +6,6 @@ import Navbar1 from './Navbar1';
 import ArticleCard from './ArticleCard';
 import Footer from './Footer';
 
-
 const HeroSection = () => {
   return (
     <>
@@ -56,7 +55,7 @@ const HeroSection = () => {
                 but things on a small scale.
               </p>
 
-              <button className="bg-[#2DC071] text-white px-8 py-3 md:px-10 md:py-[15px] text-xs md:text-sm font-bold tracking-wider hover:bg-opacity-90 transition-colors">
+              <button className="bg-[#2DC071] text-white px-8 py-3 hover:scale-110 active:scale-95 transition-transform md:px-10 md:py-[15px] text-xs md:text-sm font-bold tracking-wider hover:bg-opacity-90 ">
                 SHOP NOW
               </button>
             </div>
@@ -78,9 +77,9 @@ const HeroSection = () => {
               alt="filter.png"
               width={510}
               height={500}
-              className="w-full h-auto"
+              className="w-full h-auto "
             />
-            <button className="absolute bottom-6 left-6 bg-white text-[#252B42] text-sm font-bold px-[64px] py-3 hover:bg-gray-50 transition-colors">
+            <button className="absolute bottom-6 left-6 bg-white text-[#252B42] hover:scale-110 active:scale-100 transition-transform text-sm font-bold px-[64px] py-3 hover:bg-gray-50 ">
               MEN
             </button>
           </div>
@@ -92,9 +91,9 @@ const HeroSection = () => {
               alt="filter (1).png"
               width={240}
               height={500}
-              className="w-full h-auto"
+              className="w-full h-auto "
             />
-            <button className="absolute bottom-6 left-6 bg-white text-[#252B42] text-sm font-bold px-10 py-3 hover:bg-gray-50 transition-colors">
+            <button className="absolute bottom-6 left-6 bg-white text-[#252B42] text-sm font-bold px-10 py-3 hover:scale-110 active:scale-100 transition-transform hover:bg-gray-50 ">
               WOMEN
             </button>
           </div>
@@ -108,9 +107,9 @@ const HeroSection = () => {
                 alt="filter (2).png"
                 width={240}
                 height={242}
-                className="w-full h-auto"
+                className="w-full h-auto "
               />
-              <button className="absolute bottom-6 left-6 bg-white text-[#252B42] text-sm font-bold px-10 py-3 hover:bg-gray-50 transition-colors">
+              <button className="absolute bottom-6 left-6 bg-white text-[#252B42] hover:scale-110 active:scale-100 transition-transform text-sm font-bold px-10 py-3 hover:bg-gray-50 ">
                 ACCESSORIES
               </button>
             </div>
@@ -122,9 +121,9 @@ const HeroSection = () => {
                 alt="filter (3).png"
                 width={239}
                 height={242}
-                className="w-full h-auto"
+                className="w-full h-auto  "
               />
-              <button className="absolute bottom-6 left-6 bg-white text-[#252B42] text-sm font-bold px-10 py-3 hover:bg-gray-50 transition-colors">
+              <button className="absolute bottom-6 left-6 bg-white text-[#252B42] hover:scale-110 active:scale-100 transition-transform text-sm font-bold px-10 py-3 hover:bg-gray-50 ">
                 KIDS
               </button>
             </div>
@@ -218,7 +217,7 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-8 space-y-4 lg:space-y-0 mt-4">
               <span className="text-white text-xl lg:text-2xl font-bold">$16.48</span>
-              <button className="bg-[#2DC071] text-white px-8 py-3 lg:px-10 lg:py-4 rounded font-bold text-sm lg:text-base hover:bg-opacity-90 transition-colors">
+              <button className="bg-[#2DC071] text-white px-8 py-3 hover:scale-110 active:scale-100 transition-transform lg:px-10 lg:py-4 rounded font-bold text-sm lg:text-base hover:bg-opacity-90 ">
                 ADD TO CART
               </button>
             </div>
@@ -258,10 +257,10 @@ const HeroSection = () => {
               but things on a small scale.
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
-              <button className="bg-[#2DC071] text-white px-8 py-3 rounded-md font-bold text-sm hover:bg-opacity-90 transition-colors">
+              <button className="bg-[#2DC071] text-white px-8 py-3 rounded-md font-bold hover:scale-110 active:scale-100 transition-transform text-sm hover:bg-opacity-90 ">
                 BUY NOW
               </button>
-              <button className="bg-transparent text-[#2DC071] px-8 py-3 rounded-md border border-[#2DC071] font-bold text-sm hover:bg-opacity-90 transition-colors">
+              <button className="bg-transparent text-[#2DC071] px-8 py-3 rounded-md border hover:scale-110 active:scale-100 transition-transform border-[#2DC071] font-bold text-sm hover:bg-opacity-90 ">
                 LEARN MORE
               </button>
             </div>

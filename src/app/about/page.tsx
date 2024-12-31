@@ -21,7 +21,7 @@ const About = () => {
             {/* Main Navbar Start */}
             <div className="bg-white px-4 md:px-6 py-2 mb-3 h-auto w-full my-[16px]">
                 <div className="flex items-center justify-between md:justify-around font-medium text-sm">
-                    <h3 className="text-2xl font-bold text-[#252B42]">Bandage</h3>
+                  <Link href={'/'}>  <h3 className="text-2xl font-bold text-[#252B42]">Bandage</h3> </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex">
@@ -35,7 +35,7 @@ const About = () => {
 
                     <div className='flex items-center gap-5'>
                         <Link href="/" className='text-[#23a6f0] text-sm font-bold'>Login</Link>
-                        <button className='bg-[#23a6f0] text-white text-sm font-bold py-[15px] px-[25px] rounded-md flex items-center gap-2'>
+                        <button className='bg-[#23a6f0] text-white text-sm font-bold py-[15px] px-[25px]  active:scale-95 transition-transform rounded-md flex items-center gap-2'>
                             Become a member <FaAngleRight size={16} />
                         </button>
                     </div>
@@ -79,7 +79,7 @@ const About = () => {
                             a small scale.
                         </p>
                         <div className="flex flex-col md:flex-row md:items-center md:space-x-8 space-y-4 md:space-y-0 mt-4">
-                            <button className='bg-[#23a6f0] text-white text-sm font-bold py-[15px] px-[25px] rounded-md flex items-center gap-2'>
+                            <button className='bg-[#23a6f0] text-white text-sm font-bold py-[15px] px-[25px] active:scale-95 transition-transform rounded-md flex items-center gap-2'>
                                 Get Quote Now
                             </button>
                         </div>
@@ -267,7 +267,7 @@ const About = () => {
                         <h3 className='text-white font-bold text-[40px]'>Now Let’s grow Yours</h3>
                         <p className='text-white text-[14px] font-light'>The gradual accumulation of information about atomic and <br />
                             small-scale behavior during the first quarter of the 20th </p>
-                        <button className='text-white border border-1 py-[15px] px-[40px] rounded-md '>Let's Connect</button>
+                        <button className='text-white border border-1 py-[15px] px-[40px] active:scale-95 transition-transform rounded-md '>Let's Connect</button>
                     </div>
                 </div>
                 <div className='w-[40%] h-[637px]'>

@@ -17,20 +17,19 @@ const ProductCard = ({
   department, 
   originalPrice, 
   salePrice, 
-  colors = ['#23A6F0', '#23856D', '#E77C40', '#252B42']  // Default colors
+  colors = ['#23A6F0', '#23856D', '#E77C40', '#252B42'] 
 }: ProductCardProps) => {
   return (
     <div className="flex flex-col items-center max-w-xs">
-      {/* Image container with fixed aspect ratio */}
+   
       <div className="relative w-full aspect-[3/4] mb-6">
         <Image
           src={imageSrc}
           alt={productName}
-          className="object-cover"
+          className="object-cover transform transition duration-500 hover:scale-110"
           width={239}
           height={427}
-        //   sizes="(max-width: 768px) 100vw, 300px"
-        //   priority
+       
         />
       </div>
 

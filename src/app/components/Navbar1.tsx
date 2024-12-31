@@ -16,43 +16,33 @@ const Navbar1 = () => {
                 {/* Main Navbar */}
                 <div className="flex items-center justify-between font-medium text-sm">
                     {/* Brand Name */}
-                    <h3 className="text-2xl font-bold text-[#252B42]">
+                  <Link href={`/`}>  <h3 className="text-2xl font-bold text-[#252B42]">
                         Bandage
-                    </h3>
+                    </h3></Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center gap-4 text-[#737373]">
                         <ul className="mr-10 lg:mr-[471px] flex items-center gap-4">
                             <li><Link href="/">Home</Link></li>
                             <li>
-                                <Link href="/">
-                                    <select
-                                        name="Shop"
-                                        id="Shop"
-                                        className="bg-transparent text-[#737373] border-none focus:ring-0 cursor-pointer"
-                                    >
-                                        <option>Shop</option>
-                                        <option>Category 1</option>
-                                        <option>Category 2</option>
-                                    </select>
-                                </Link>
+                                <Link href="/productpage">Shop</Link>
                             </li>
                             <li><Link href="/about">About</Link></li>
                             <li><Link href="/">Blog</Link></li>
                             <li><Link href="/">Contact</Link></li>
                             <li>
-                               <Link href="/productpage"> Pages </Link>   
+                                <Link href="/pricing"> Pricing </Link>
                             </li>
                         </ul>
                     </div>
 
                     {/* Desktop Account Section */}
                     <div className="hidden md:flex items-center gap-4 text-[#23A6F0]">
-                        <VscAccount size={16} />
+                        <VscAccount size={20} />
                         <p>Login / Register</p>
-                        <CiSearch size={16} />
-                        <BsCart2 size={16} />
-                        <IoHeartOutline size={16} />
+                        <CiSearch size={20} />
+                        <BsCart2 size={20} />
+                        <IoHeartOutline size={20} />
                     </div>
 
                     {/* Mobile Icons */}
