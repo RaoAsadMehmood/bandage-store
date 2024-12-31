@@ -11,6 +11,8 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import Footer from '../components/Footer';
+import AnimatedStats from './Animatedstats';
+import VideoSection from './VideoSection';
 
 
 const About = () => {
@@ -40,8 +42,8 @@ const About = () => {
                         </button>
                     </div>
 
-                    {/* Mobile Icons */}
-                    <div className="flex md:hidden items-center gap-4">
+                     {/* Mobile Icons */}
+                     <div className="flex md:hidden items-center gap-4">
                         <CiSearch size={20} className="text-gray-600" />
                         <BsCart2 size={20} className="text-gray-600" />
                         <button
@@ -53,13 +55,13 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Mobile Menu */}
+                {/* Mobile Menu - Slides down when menu is opened */}
                 {isMenuOpen && (
-                    <div className="md:hidden mt-4 pb-4">
-                        <ul className="flex flex-col justify-center items-center gap-4 text-[#737373] text-lg">
+                    <div className="md:hidden mt-[100.6px] pb-4 ">
+                        <ul className="flex flex-col  justify-center items-center gap-4 text-[#737373] text-[30px]">
                             <li><Link href="/">Home</Link></li>
-                            <li><Link href="/">Product</Link></li>
-                            <li><Link href="/">Pricing</Link></li>
+                            <li><Link href="/productpage">Product</Link></li>
+                            <li><Link href="/about">About</Link></li>
                             <li><Link href="/">Contact</Link></li>
                         </ul>
                     </div>
@@ -102,7 +104,7 @@ const About = () => {
                 </p>
             </div>
 
-            <div className='px-[195.5px]'>
+            {/* <div className='px-[195.5px]'>
                 <div className=' w-full h-[264px] flex justify-around items-center'>
                     <p className='text-[54px] text-[#252B42] font-bold flex flex-col items-center '>15 K
                         <span className='text-[#737373] text-[16px] font-bold'>Happy Customers</span>
@@ -118,9 +120,10 @@ const About = () => {
                     </p>
 
                 </div>
-            </div>
+            </div> */}
+            <AnimatedStats />
 
-            <div className="w-full h-[764px] relative">
+            {/* <div className="w-full h-[764px] relative">
 
                 <div className="flex items-center justify-center h-full relative">
                     <Image
@@ -128,17 +131,18 @@ const About = () => {
                         alt="Video-cover.png"
                         width={989}
                         height={540}
-                        className="rounded-2xl"
+                        className="rounded-2xl "
                     />
 
-                    {/* Play Button */}
+
                     <div className="absolute inset-0 flex items-center justify-center">
                         <button className="bg-[#23a6f0] rounded-full p-4 hover:scale-110 active:scale-95 transition-transform">
                             <IoPlayOutline size={40} color="white" />
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            <VideoSection />
 
 
             {/* Employees Section */}
@@ -161,7 +165,7 @@ const About = () => {
                             alt="team-1-user-1.png"
                             width={316}
                             height={213}
-                            className="rounded-lg"
+                            className="rounded-lg transform transition duration-500 hover:scale-110"
                         />
                         <p className="text-[#252B42] text-[16px] font-bold">Username</p>
                         <span className="text-[14px] text-[#737373]">Profession</span>
@@ -179,7 +183,7 @@ const About = () => {
                             alt="team-1-user-2.png"
                             width={316}
                             height={213}
-                            className="rounded-lg"
+                            className="rounded-lg transform transition duration-500 hover:scale-110"
                         />
                         <p className="text-[#252B42] text-[16px] font-bold">Username</p>
                         <span className="text-[14px] text-[#737373]">Profession</span>
@@ -197,7 +201,7 @@ const About = () => {
                             alt="team-1-user-3.png"
                             width={316}
                             height={213}
-                            className="rounded-lg"
+                            className="rounded-lg transform transition duration-500 hover:scale-110"
                         />
                         <p className="text-[#252B42] text-[16px] font-bold">Username</p>
                         <span className="text-[14px] text-[#737373]">Profession</span>
@@ -227,35 +231,35 @@ const About = () => {
                         alt="Hooli Logo"
                         width={153}
                         height={34}
-                        className="w-auto h-auto"
+                        className="w-auto h-auto transform transition duration-500 hover:scale-110"
                     />
                     <Image
                         src="/Images/Vector.png"
                         alt="Lyft Logo"
                         width={153}
                         height={34}
-                        className="w-auto h-auto"
+                        className="w-auto h-auto transform transition duration-500 hover:scale-110"
                     />
                     <Image
                         src="/Images/fa-brands-5.png"
                         alt="Leaf Logo"
                         width={153}
                         height={34}
-                        className="w-auto h-auto"
+                        className="w-auto h-auto transform transition duration-500 hover:scale-110"
                     />
                     <Image
                         src="/Images/col-md-2 (1).png"
                         alt="Stripe Logo"
                         width={153}
                         height={34}
-                        className="w-auto h-auto"
+                        className="w-auto h-auto transform transition duration-500 hover:scale-110 "
                     />
                     <Image
                         src="/Images/col-md-2.png"
                         alt="AWS Logo"
                         width={153}
                         height={34}
-                        className="w-auto h-auto"
+                        className="w-auto h-auto transform transition duration-500 hover:scale-110"
                     />
                 </div>
             </div>

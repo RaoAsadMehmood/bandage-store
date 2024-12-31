@@ -60,16 +60,15 @@ const Pricing = () => {
                         )}
                     </div>
                     {/* Main Navbar End */}
-                    <div className='flex flex-col justify-center items-center'>
+                    <div className='flex flex-col justify-center items-center mt-2'>
                         <p className='text-[#737373] font-bold text-base'>Pricing</p>
                         <h2 className='text-[#252B42] font-bold text-[58px]'>SAMPLE PRICING</h2>
                     </div>
-                        <div className='flex justify-center items-center'>
+                    <div className='flex justify-center items-center'>
                         <p className='text-[#252B42]'>Home</p>
                         <FaAngleRight size={16} color='#737373' />
                         <span className='text-[#737373]'>Pricing</span>
-                        Pricing
-                        </div>
+                    </div>
 
                 </div>
             </div>

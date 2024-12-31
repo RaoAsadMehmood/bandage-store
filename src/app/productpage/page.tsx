@@ -140,11 +140,11 @@ const ProductList = () => {
             </div>
 
             <div className='flex justify-center items-center gap-8  w-full flex-wrap '>
-                <ClothsCard imageSrc={'/Images/fixed-height (5).png'} />
-                <ClothsCard imageSrc={'/Images/fixed-height (4).png'} />
-                <ClothsCard imageSrc={'/Images/fixed-height (3).png'} />
-                <ClothsCard imageSrc={'/Images/fixed-height (2).png'} />
-                <ClothsCard imageSrc={'/Images/fixed-height (1).png'} />
+                <ClothsCard imageSrc={'/Images/ssop-img-1.jpg'} />
+                <ClothsCard imageSrc={'/Images/card-image-3.jpg'} />
+                <ClothsCard imageSrc={'/Images/ssop-img-3.jpg'} />
+                <ClothsCard imageSrc={'/Images/ssop-img-4.jpg'} />
+                <ClothsCard imageSrc={'/Images/ssop-img-5.jpg'} />
             </div>
 
             <div className='max-w-6xl mt-[48px]  mx-auto flex justify-between items-center'>
