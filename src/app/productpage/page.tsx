@@ -20,13 +20,10 @@ import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
 import Navigation from './Navigation';
 const ProductList = () => {
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
         <>
             <Navigation />
-
-
 
             {/* Catagery Section */}
 
@@ -36,9 +33,9 @@ const ProductList = () => {
       <p className="text-lg font-medium text-gray-900">shop</p>
     </div>
     <div className="flex items-center space-x-2 text-sm">
-      <p className="text-gray-600">Home</p>
+    <Link href={"/"}>  <p className="text-gray-600">Home</p> </Link>
       <FaAngleRight className="h-4 w-4 text-gray-400" />
-      <p className="text-gray-400">shop</p>
+     <Link href={"/productpage"}> <p className="text-gray-400">Shop</p> </Link>
     </div>
   </div>
 </div>
@@ -52,9 +49,9 @@ const ProductList = () => {
 </div>
 
             <div className='max-w-6xl mt-[48px]  mx-auto flex justify-between items-center'>
-                <div className='text-[#737373] text-center py-[24px]'>
-                    Show all results
-                </div>
+               <Link href={""}> <div className='text-[#737373] text-center py-[24px]'>
+                    Show all results 
+                </div></Link>
                 <div className='flex justify-center items-center gap-2 '>
                     View: <HiMiniSquares2X2 />
                     <BsCardChecklist />
@@ -63,8 +60,9 @@ const ProductList = () => {
                 <div className='flex justify-between items-center gap-3 '>
                     <button className='py-[10px] px-[20px]  text-black border border-gray-200 rounded'>
                         Popularity <select name="Popularity"
-                            id="Popularity"></select></button>
-                    <button className='py-[10px] px-[20px]  bg-[#23A6F0] rounded'>Filter</button>
+                            id="Popularity"></select>
+                            </button>
+                   <Link href={""}> <button className='py-[10px] px-[20px] bg-[#23A6F0]  rounded transition-transform transform hover:translate-y-0 active:translate-y-1 hover:bg-[#2a8cc5]'>Filter</button> </Link>
                 </div>
 
             </div>

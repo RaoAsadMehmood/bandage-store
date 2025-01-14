@@ -16,7 +16,7 @@ const Navbar1 = () => {
                 {/* Main Navbar */}
                 <div className="flex items-center justify-between font-medium text-sm">
                     {/* Brand Name */}
-                  <Link href={`/`}>  <h3 className="text-2xl font-bold text-[#252B42]">
+                    <Link href={`/`}>  <h3 className="text-2xl font-bold text-[#252B42]">
                         Bandage
                     </h3></Link>
 
@@ -28,8 +28,8 @@ const Navbar1 = () => {
                                 <Link href="/productpage">Shop</Link>
                             </li>
                             <li><Link href="/about">About</Link></li>
-                            <li><Link href="/">Blog</Link></li>
-                            <li><Link href="/">Contact</Link></li>
+                            <li><Link href="/team">Team</Link></li>
+                            <li><Link href="/contact">Contact</Link></li>
                             <li>
                                 <Link href="/pricing"> Pricing </Link>
                             </li>
@@ -39,7 +39,7 @@ const Navbar1 = () => {
                     {/* Desktop Account Section */}
                     <div className="hidden md:flex items-center gap-4 text-[#23A6F0]">
                         <VscAccount size={20} />
-                        <p>Login / Register</p>
+                        <Link href={""}> <p>Login / Register</p> </Link>
                         <CiSearch size={20} />
                         <BsCart2 size={20} />
                         <IoHeartOutline size={20} />

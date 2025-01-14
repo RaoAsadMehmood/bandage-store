@@ -15,11 +15,11 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "Shop", href: "/shop" },
+  { label: "Shop", href: "/" },
   { label: "About", href: "/about" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
-  { label: "Pages", href: "/pages" },
+
 ];
 
 // Mobile menu component
@@ -103,18 +103,18 @@ const Navigation = () => {
         <div className="flex items-center gap-3">
           <p className="text-[12px] font-bold">Follow Us:</p>
           <div className="flex items-center gap-3">
-            <a href="#" className="text-[#FFFFFF] hover:text-[#23A6F0]">
+            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]">
               <FaInstagram size={16} />
-            </a>
-            <a href="#" className="text-[#FFFFFF] hover:text-[#23A6F0]">
+            </Link>
+            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]">
               <SiYoutube size={16} />
-            </a>
-            <a href="#" className="text-[#FFFFFF] hover:text-[#23A6F0]">
+            </Link>
+            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]">
               <FaFacebook size={16} />
-            </a>
-            <a href="#" className="text-[#FFFFFF] hover:text-[#23A6F0]">
+            </Link>
+            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]">
               <FaTwitter size={16} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@ const Navigation = () => {
       {/* Main Navigation */}
       <div className="bg-white px-4 md:px-6 py-2 mb-3 h-auto w-full">
         <div className="flex items-center justify-between md:justify-around font-medium text-sm">
-          <h3 className="text-2xl font-bold text-[#252B42]">Bandage</h3>
+        <Link href={"/"}> <h3 className="text-2xl font-bold text-[#252B42]">Bandage</h3> </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex">
@@ -139,7 +139,7 @@ const Navigation = () => {
           {/* Desktop Account Section */}
           <div className="hidden md:flex items-center gap-2 text-[#23A6F0]">
             <VscAccount size={20} />
-            <span>Login / Register</span>
+          <Link href={""}><span>Login / Register</span> </Link>
             <CiSearch size={20} />
             <BsCart2 size={20} />
             <IoHeartOutline size={20} />

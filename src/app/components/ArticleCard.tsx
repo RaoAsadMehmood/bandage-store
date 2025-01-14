@@ -25,9 +25,9 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
   comments,
 }) => {
   return (
-    <div className="w-[348px] h-screen bg-white shadow-lg rounded-lg overflow-hidden flex flex-col">
+    <div className="w-[348px] h-screen bg-white shadow-lg rounded-lg overflow-hidden flex flex-col border border-gray-300 transform transition duration-700 ease-in-out hover:scale-110">
       {/* Image Section */}
-      <div className="relative w-full h-[220px]">
+      <div className="relative w-full h-[220px] object-cover transform transition duration-500 hover:scale-110">
         <Image
           src={imageSrc}
           alt={altText}

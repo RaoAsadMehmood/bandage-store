@@ -28,7 +28,7 @@ const AnimatedNumber: React.FC<AnimatedNumberProps> = ({
   startAnimation 
 }) => {
   const [count, setCount] = useState<number>(0);
-  const duration = 5000;
+  const duration = 3000;
   const framesPerSecond = 60;
   const totalFrames = (duration / 1000) * framesPerSecond;
   

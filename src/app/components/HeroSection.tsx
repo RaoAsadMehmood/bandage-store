@@ -5,6 +5,7 @@ import Header from './Header';
 import Navbar1 from './Navbar1';
 import ArticleCard from './ArticleCard';
 import Footer from './Footer';
+import Link from 'next/link';
 
 const HeroSection = () => {
   return (
@@ -13,7 +14,7 @@ const HeroSection = () => {
       <Header />
       <Navbar1 />
       <div className="relative w-full h-screen bg-[#01b7df] overflow-x-hidden">
-        {/* Image */}
+        {/* Desktop Image */}
         <div className="absolute right-0 top-0 h-full w-1/2 hidden md:block">
           <Image
             src="/Images/shop-hero-1-product-slide-1.jpg"
@@ -37,11 +38,11 @@ const HeroSection = () => {
           />
         </div>
 
-        {/* Content container */}
+        {/* Content Container */}
         <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center md:items-center md:justify-start">
-          <div className="container mx-auto px-4 lg:px-24 text-center md:text-left">
-            {/* Text content */}
-            <div className="text-white space-y-4 md:space-y-8 max-w-md md:max-w-xl">
+          <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center md:text-left">
+            {/* Text Content */}
+            <div className="text-white space-y-4 md:space-y-8 max-w-sm md:max-w-md lg:max-w-xl">
               <p className="text-xs md:text-sm tracking-wider font-bold">
                 SUMMER 2020
               </p>
@@ -55,13 +56,16 @@ const HeroSection = () => {
                 but things on a small scale.
               </p>
 
-              <button className="bg-[#2DC071] text-white px-8 py-3 hover:scale-110 active:scale-95 transition-transform md:px-10 md:py-[15px] text-xs md:text-sm font-bold tracking-wider hover:bg-opacity-90 ">
-                SHOP NOW
-              </button>
+              <Link href={"/productpage"}>
+                <button className="bg-[#2DC071] text-white px-6 py-3 mt-4 md:px-10 md:py-[15px] text-xs md:text-sm font-bold tracking-wider hover:bg-opacity-90 transition-transform transform hover:translate-y-0 active:translate-y-1">
+                  SHOP NOW
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
+
 
       <div className="flex flex-col max-w-full overflow-x-hidden items-center justify-center pt-[80px] mb-[48px] bg-[#FAFAFA]">
         <h3 className="text-2xl font-bold text-[#252B42]">EDITOR'S PICK</h3>
@@ -79,7 +83,7 @@ const HeroSection = () => {
               height={500}
               className="w-full h-auto "
             />
-            <button className="absolute bottom-6 left-6 bg-white text-[#252B42] hover:scale-110 active:scale-100 transition-transform text-sm font-bold px-[64px] py-3 hover:bg-gray-50 ">
+            <button className="absolute bottom-6 left-6 bg-white text-[#252B42] transition-transform transform hover:translate-y-0 active:translate-y-1 text-sm font-bold px-[64px] py-3 hover:bg-gray-50 ">
               MEN
             </button>
           </div>
@@ -93,7 +97,7 @@ const HeroSection = () => {
               height={500}
               className="w-full h-auto "
             />
-            <button className="absolute bottom-6 left-6 bg-white text-[#252B42] text-sm font-bold px-10 py-3 hover:scale-110 active:scale-100 transition-transform hover:bg-gray-50 ">
+            <button className="absolute bottom-6 left-6 bg-white text-[#252B42] text-sm font-bold px-10 py-3 transition-transform transform hover:translate-y-0 active:translate-y-1 hover:bg-gray-50 ">
               WOMEN
             </button>
           </div>
@@ -109,7 +113,7 @@ const HeroSection = () => {
                 height={242}
                 className="w-full h-auto "
               />
-              <button className="absolute bottom-6 left-6 bg-white text-[#252B42] hover:scale-110 active:scale-100 transition-transform text-sm font-bold px-10 py-3 hover:bg-gray-50 ">
+              <button className="absolute bottom-6 left-6 bg-white text-[#252B42] transition-transform transform hover:translate-y-0 active:translate-y-1 text-sm font-bold px-10 py-3 hover:bg-gray-50 ">
                 ACCESSORIES
               </button>
             </div>
@@ -123,7 +127,7 @@ const HeroSection = () => {
                 height={242}
                 className="w-full h-auto  "
               />
-              <button className="absolute bottom-6 left-6 bg-white text-[#252B42] hover:scale-110 active:scale-100 transition-transform text-sm font-bold px-10 py-3 hover:bg-gray-50 ">
+              <button className="absolute bottom-6 left-6 bg-white text-[#252B42] transition-transform transform hover:translate-y-0 active:translate-y-1 text-sm font-bold px-10 py-3 hover:bg-gray-50 ">
                 KIDS
               </button>
             </div>
@@ -217,7 +221,7 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-8 space-y-4 lg:space-y-0 mt-4">
               <span className="text-white text-xl lg:text-2xl font-bold">$16.48</span>
-              <button className="bg-[#2DC071] text-white px-8 py-3 hover:scale-110 active:scale-100 transition-transform lg:px-10 lg:py-4 rounded font-bold text-sm lg:text-base hover:bg-opacity-90 ">
+              <button className="bg-[#2DC071] text-white px-8 py-3 transition-transform transform hover:translate-y-0 active:translate-y-1 lg:px-10 lg:py-4 rounded font-bold text-sm lg:text-base hover:bg-opacity-90 ">
                 ADD TO CART
               </button>
             </div>
@@ -257,10 +261,10 @@ const HeroSection = () => {
               but things on a small scale.
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 mt-4">
-              <button className="bg-[#2DC071] text-white px-8 py-3 rounded-md font-bold hover:scale-110 active:scale-100 transition-transform text-sm hover:bg-opacity-90 ">
+              <button className="bg-[#2DC071] text-white px-8 py-3 rounded-md font-bold transition-transform transform hover:translate-y-0 active:translate-y-1 text-sm hover:bg-opacity-90 ">
                 BUY NOW
               </button>
-              <button className="bg-transparent text-[#2DC071] px-8 py-3 rounded-md border hover:scale-110 active:scale-100 transition-transform border-[#2DC071] font-bold text-sm hover:bg-opacity-90 ">
+              <button className="bg-transparent text-[#2DC071] px-8 py-3 rounded-md border transition-transform transform hover:translate-y-0 active:translate-y-1 border-[#2DC071] font-bold text-sm hover:bg-opacity-90 ">
                 LEARN MORE
               </button>
             </div>

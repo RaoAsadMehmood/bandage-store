@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { SiYoutube } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import Link from 'next/link';
 
 const Header = () => {
     return (
@@ -19,7 +20,7 @@ const Header = () => {
                     </div>
                     <div className='flex items-center gap-1'>
                         <CiMail size={16} />
-                        <a href="mailto:michelle.rivera@example.com"><p>michelle.rivera@example.com</p></a> 
+                        <a href="mailto:michelle.rivera@example.com"><p>michelle.rivera@example.com</p></a>
                     </div>
                 </div>
                 {/* Center Section - Hidden on mobile */}
@@ -29,10 +30,10 @@ const Header = () => {
                 {/* Right Section - Hidden on mobile */}
                 <div className='hidden md:flex items-center gap-2'>
                     <p>Follow Us:</p>
-                    <FaInstagram size={16} />
-                    <SiYoutube size={16} />
-                    <FaFacebook size={16} />
-                    <FaTwitter size={16} />
+                    <Link href={""}>  <FaInstagram size={16} /></Link>
+                    <Link href={""}>  <SiYoutube size={16} /> </Link>
+                    <Link href={""}>  <FaFacebook size={16} /> </Link>
+                    <Link href={""}>  <FaTwitter size={16} /> </Link>
                 </div>
             </div>
         </>
