@@ -17,7 +17,7 @@ const navItems: NavItem[] = [
   { label: "Home", href: "/" },
   { label: "Shop", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
+  { label: "Team", href: "/team" },
   { label: "Contact", href: "/contact" },
 
 ];
@@ -103,17 +103,17 @@ const Navigation = () => {
         <div className="flex items-center gap-3">
           <p className="text-[12px] font-bold">Follow Us:</p>
           <div className="flex items-center gap-3">
-            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]">
-              <FaInstagram size={16} />
+            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110 ">
+              <FaInstagram size={20} className=""/>
             </Link>
-            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]">
-              <SiYoutube size={16} />
+            <Link href="" className="text-[#FFFFFF]  hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110 ">
+              <SiYoutube size={20} />
             </Link>
-            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]">
-              <FaFacebook size={16} />
+            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]  hover:transform transition duration-500 hover:scale-110 ">
+              <FaFacebook size={20} />
             </Link>
-            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0]">
-              <FaTwitter size={16} />
+            <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110">
+              <FaTwitter size={20} />
             </Link>
           </div>
         </div>
@@ -138,11 +138,11 @@ const Navigation = () => {
 
           {/* Desktop Account Section */}
           <div className="hidden md:flex items-center gap-2 text-[#23A6F0]">
-            <VscAccount size={20} />
+            <VscAccount size={20} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]"/>
           <Link href={""}><span>Login / Register</span> </Link>
-            <CiSearch size={20} />
-            <BsCart2 size={20} />
-            <IoHeartOutline size={20} />
+          <Link href={""}> <CiSearch size={20}  className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]"/> </Link>
+          <Link href={""}> <BsCart2 size={20}  className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]"/>  </Link>
+          <Link href={""}><IoHeartOutline size={20} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" /></Link>
           </div>
 
           {/* Mobile Menu Button */}
