@@ -30,10 +30,10 @@ const Header = () => {
                 {/* Right Section - Hidden on mobile */}
                 <div className='hidden md:flex items-center gap-2'>
                     <p>Follow Us:</p>
-                    <Link href={""}>  <FaInstagram size={16} /></Link>
-                    <Link href={""}>  <SiYoutube size={16} /> </Link>
-                    <Link href={""}>  <FaFacebook size={16} /> </Link>
-                    <Link href={""}>  <FaTwitter size={16} /> </Link>
+                    <Link href={""}>  <FaInstagram size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110' /></Link>
+                    <Link href={""}>  <SiYoutube size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110'/> </Link>
+                    <Link href={""}>  <FaFacebook size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110'/> </Link>
+                    <Link href={""}>  <FaTwitter size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110'/> </Link>
                 </div>
             </div>
         </>

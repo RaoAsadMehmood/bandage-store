@@ -38,11 +38,11 @@ const Navbar1 = () => {
 
                     {/* Desktop Account Section */}
                     <div className="hidden md:flex items-center gap-4 text-[#23A6F0]">
-                        <VscAccount size={20} />
+                        <Link href={""}>   <VscAccount size={20} className='transform transition duration-500 hover:scale-110' /></Link>
                         <Link href={""}> <p>Login / Register</p> </Link>
-                        <CiSearch size={20} />
-                        <BsCart2 size={20} />
-                        <IoHeartOutline size={20} />
+                        <Link href={""}> <CiSearch size={20} className='transform transition duration-500 hover:scale-110' /></Link>
+                        <Link href={""}><BsCart2 size={20} className='transform transition duration-500 hover:scale-110' /></Link>
+                        <Link href={""}> <IoHeartOutline size={20} className='transform transition duration-500 hover:scale-110' /></Link>
                     </div>
 
                     {/* Mobile Icons */}
