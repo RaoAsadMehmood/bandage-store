@@ -11,6 +11,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Navbar1 from '../components/Navbar1';
+import Footer from '../components/Footer';
 
 const CartPage = () => {
     const [cartItems, setCartItems] = useState<Product[]>([]);
@@ -130,6 +131,8 @@ const CartPage = () => {
                     </motion.div>
                 )}
             </div>
+
+            <Footer />
         </>
     );
 };
