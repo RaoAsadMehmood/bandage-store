@@ -33,7 +33,7 @@ const Navbar1 = () => {
                     </Link>
 
                     <div className="hidden md:flex items-center gap-4 text-[#737373]">
-                        <ul className="mr-10 lg:mr-[471px] flex items-center gap-4">
+                        <ul className="mr-10 lg:mr-[471px] flex items-center gap-4 text-[16px]">
                             {links.map(({ href, label }, index) => (
                                 <li key={index}>
                                     <Link
@@ -59,12 +59,12 @@ const Navbar1 = () => {
                     <div className="hidden md:flex items-center gap-4 text-[#23A6F0]">
                         <Link href={""}>
                             <VscAccount
-                                size={20}
+                                size={24}
                                 className="transform transition duration-500 hover:scale-110"
                             />
                         </Link>
                         <Link href={""}>
-                            <p>Login / Register</p>
+                            <p className='text-[14px]'>Login / Register</p>
                         </Link>
                         <Link href={""}>
                             <CiSearch

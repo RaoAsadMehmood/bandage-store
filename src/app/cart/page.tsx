@@ -12,6 +12,7 @@ import { motion } from 'framer-motion';
 import Header from '../components/Header';
 import Navbar1 from '../components/Navbar1';
 import Footer from '../components/Footer';
+import { useRouter } from 'next/navigation';
 
 const CartPage = () => {
     const [cartItems, setCartItems] = useState<Product[]>([]);
@@ -59,6 +60,29 @@ const CartPage = () => {
     const calculatedTotal = () => {
         return cartItems.reduce((total, item) => total + item.price * item.stock, 0);
     };
+
+    const router = useRouter();
+
+    const handleProceed = () =>{
+        Swal.fire({
+            title: "Processing your order...",
+            text: "Please wait a moment ✋",
+            icon: "info",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Procees",
+
+        }).then((result) =>{
+            if(result.isConfirmed){
+                Swal.fire("Success", "Your order has been successfully processed", "success")
+
+                router.push("/checkout");
+                // CLear the cart after proceeding (optional) 
+                setCartItems([]);
+            }
+        })
+    }
 
     return (
 
@@ -123,7 +147,7 @@ const CartPage = () => {
                             <h2 className="text-xl font-bold">Total: ${calculatedTotal().toFixed(2)}</h2>
                             <button
                                 className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-all"
-                                onClick={() => Swal.fire("Success", "Your order has been successfully processed", "success")}
+                                onClick={handleProceed}
                             >
                                 Proceed to Checkout
                             </button>
