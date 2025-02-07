@@ -180,21 +180,21 @@ const HeroPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
             {products
-              .filter(product => product.slug)
+              .filter(product => product?.slug)
               .slice(0, 8)
-              .map((product) => (
+              ?.map((product) => (
                 <div
-                  key={product._id}
+                  key={product?._id}
                   className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 group flex flex-col"
                 >
                   {/* Image Section */}
                   <div className="aspect-[4/5] w-full overflow-hidden rounded-lg bg-gray-100 relative">
-                    <Link href={`/products/${product.slug}`}>
-                      {product.productImage && (
+                    <Link href={`/products/${product?.slug}`}>
+                      {product?.productImage && (
                         <div className="w-full h-full flex items-center justify-center">
                           <Image
-                            src={urlFor(product.productImage).url()}
-                            alt={product.title}
+                            src={urlFor(product?.productImage).url()}
+                            alt={product?.title}
                             width={300}
                             height={300}
                             className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
