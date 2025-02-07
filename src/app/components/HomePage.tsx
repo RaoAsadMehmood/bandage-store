@@ -76,7 +76,7 @@ const HeroPage = () => {
           <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center md:text-left">
             {/* Text Content */}
             <div className="text-white space-y-4 md:space-y-8 max-w-sm md:max-w-md lg:max-w-xl">
-              <p className="text-xs md:text-sm tracking-wider font-bold">
+              <p className="text-sm md:text-sm tracking-wider font-bold">
                 SUMMER 2020
               </p>
 
@@ -84,7 +84,7 @@ const HeroPage = () => {
                 NEW COLLECTION
               </h2>
 
-              <p className="text-sm md:text-base font-light leading-relaxed">
+              <p className="text-lg md:text-base font-light leading-relaxed">
                 We know how large objects will act,<br />
                 but things on a small scale.
               </p>
@@ -102,8 +102,8 @@ const HeroPage = () => {
 
 
       <div className="flex flex-col max-w-full overflow-x-hidden items-center justify-center pt-[80px] mb-[48px] bg-[#FAFAFA]">
-        <h3 className="text-2xl font-bold text-[#252B42]">EDITOR'S PICK</h3>
-        <span className="text-[#737373] text-sm text-center mt-2">
+        <h3 className="text-3xl font-bold text-[#252B42]">EDITOR'S PICK</h3>
+        <span className="text-[#737373] text-lg text-center mt-2">
           Problems trying to resolve the conflict between
         </span>
 
@@ -295,9 +295,9 @@ const HeroPage = () => {
 
         {/* Featured Posts Section */}
         <div className='text-center px-4 md:px-8 mt-20 md:mt-[112px] mb-10 md:mb-[80px] flex flex-col items-center gap-2 max-w-screen-xl mx-auto'>
-          <span className='text-[#23A6F0] text-sm tracking-wider font-bold'>Practice Advice</span>
-          <h3 className='text-2xl md:text-[40px] font-bold text-[#252B42]'>Featured Posts</h3>
-          <p className='text-[#737373] text-sm px-4'>
+          <span className='text-[#23A6F0] text-lg tracking-wider font-bold'>Practice Advice</span>
+          <h3 className='text-3xl md:text-[40px] font-bold text-[#252B42]'>Featured Posts</h3>
+          <p className='text-[#737373] text-lg px-4'>
             Problems trying to resolve the conflict between
             <span className='hidden md:inline'><br /></span>
             the two major realms of Classical physics: Newtonian mechanics

@@ -9,9 +9,11 @@ import { urlFor } from '@/sanity/lib/image';
 import Header from '../components/Header';
 import Navbar1 from '../components/Navbar1';
 import { ChevronRight } from 'lucide-react';
+import Swal from 'sweetalert2';
+import { client } from '@/sanity/lib/client';
 
 const Checkout = () => {
-    
+
 
     const [cartItems, setCartItems] = useState<Product[]>([]);
     const [discount, setDiscount] = useState<number>(0);
@@ -69,11 +71,54 @@ const Checkout = () => {
         return Object.values(errors).every((error) => !error)
     }
 
-    const handlePlaceOrder = () => {
+    const handlePlaceOrder = async () => {
         if (validateForm()) {
-            localStorage.removeItem("appliedDiscount");
+            Swal.fire({
+                title: "Processing your order...",
+                text: "Please wait a moment ✋ ",
+                icon: "info",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Proceed",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    localStorage.removeItem("appliedDiscount");
+                    Swal.fire("Success", "Your order has been successfully placed", "success");
+                }
+            })
+        } else {
+            Swal.fire("Error", "Please fill in all the required fields", "error");
         }
+
+        const orderData = {
+            _type: "order",
+            firstName: formValues.firstName,
+            lastName: formValues.lastName,
+            email: formValues.email,
+            phone: formValues.phone,
+            address: formValues.address,
+            zipCode: formValues.zipCode,
+            city: formValues.city,
+            cartItems: cartItems.map(item => ({
+                type: "reference",
+                ref: item._id,
+            })),
+            total: subTotal - discount,
+            discount: discount,
+            orderData: new Date().toISOString
+        };
+
+        try {
+            await client.create(orderData)
+            localStorage.removeItem("appliedDiscount")
+        } catch (error) {
+            console.log("Error creating order:", error);
+
+        }
+
     }
+
 
     return (
         <>
@@ -94,7 +139,7 @@ const Checkout = () => {
                         {/* Billing Form Section */}
                         <div className="lg:w-2/3">
                             <h2 className="text-2xl font-bold text-gray-900 mb-6">Billing Information</h2>
-                            
+
                             <form onSubmit={(e) => { e.preventDefault(); handlePlaceOrder(); }} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 {/* First Name */}
                                 <div className="space-y-1">
@@ -199,7 +244,7 @@ const Checkout = () => {
                         {/* Order Summary Section */}
                         <div className="lg:w-1/3 bg-gray-50 p-6 rounded-xl shadow-inner">
                             <h2 className="text-xl font-bold text-gray-900 mb-4">Order Summary</h2>
-                            
+
                             {/* Cart Items */}
                             <div className="space-y-4 mb-6">
                                 {cartItems.map((item) => (
@@ -238,7 +283,7 @@ const Checkout = () => {
                             </div>
 
                             {/* Place Order Button */}
-                            <button 
+                            <button
                                 onClick={handlePlaceOrder}
                                 className="w-full mt-6 bg-[#23A6F0] text-white py-3 rounded-lg hover:bg-[#1e8ec7] transition-colors"
                             >
