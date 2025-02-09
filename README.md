@@ -19,6 +19,43 @@ Deployment: Vercel
 🎯 Why This Project?
 Finding the perfect furniture online can be tough – mismatched styles, unreliable sellers, and unclear pricing can complicate things. This platform tackles these issues by offering a seamless, visually appealing, and user-friendly shopping experience.
 
+
+---
+## 🚀 Getting Started  
+### **1️⃣ Clone the Repository**  
+```sh
+git clone https://github.com/your-repo/marketplace-store.git
+cd marketplace-store
+```
+
+### **2️⃣ Install Dependencies**  
+```sh
+npm install
+```
+
+### **3️⃣ Set Up Environment Variables**  
+Create a `.env.local` file and add your API keys, database credentials, and other configurations.  
+
+### **4️⃣ Run the Development Server**  
+```sh
+npm run dev
+```
+The application will be available at **http://localhost:3000**  
+
+---
+
+---
+
+## 🛠️ Deployment  
+This project can be deployed using **Vercel, Netlify, or any cloud provider**. Run the following command for a production build:  
+```sh
+npm run build
+```
+Then, deploy the output folder to your preferred hosting service.  
+
+---
+
+
 💡 This is just the beginning! Future updates will bring AR furniture previews, customization options, and much more!
 
 📢 Interested in contributing or sharing feedback? Feel free to reach out! 🚀
