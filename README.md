@@ -1,4 +1,4 @@
-Welcome to my Bandage Store, where elegance meets convenience! 
+Welcome to  Bandage Store, where elegance meets convenience! 
 
 This project is a modern e-commerce platform designed for furniture lovers. Whether you're looking for a cozy sofa, a stylish dining table, or a sleek bookshelf, this marketplace guarantees a smooth and enjoyable online shopping experience.
 
@@ -8,8 +8,7 @@ This project is a modern e-commerce platform designed for furniture lovers. Whet
 ✅ Real-Time Inventory Management – Only available products are displayed.
 ✅ Secure Checkout & Payment – Multiple payment options for a seamless purchase.
 ✅ Wishlist & Cart Functionality – Save your favorites and shop at your own pace.
-✅ AI-Powered Recommendations – Get personalized furniture suggestions.
-✅ Live Order Tracking – Stay updated with real-time shipment notifications.
+
 
 🛠️ Tech Stack
 Frontend: Next.js, TypeScript, Tailwind CSS
