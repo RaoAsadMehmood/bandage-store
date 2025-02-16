@@ -266,7 +266,7 @@ const About = () => {
                         <h3 className='text-white font-bold text-[40px]'>Now Let’s grow Yours</h3>
                         <p className='text-white text-[14px] font-light'>The gradual accumulation of information about atomic and <br />
                             small-scale behavior during the first quarter of the 20th </p>
-                        <button className='text-white border border-1 py-[15px] px-[40px] rounded-md '>Let's Connect</button>
+                        <button className='text-white border border-1 py-[15px] px-[40px] rounded-md '>Lets Connect</button>
                     </div>
                 </div>
                 <div className='w-[40%] h-[637px]'>

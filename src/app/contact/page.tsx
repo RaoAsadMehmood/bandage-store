@@ -132,8 +132,8 @@ const Contact = () => {
                     </div>
 
                     <div className='text-center'>
-                        <span className='text-[#737373] font-semibold text-lg'>WE CAN'T WAIT TO MEET YOU!</span>
-                        <h3 className='text-[#252B42] font-bold text-[54px]'>Let's Talk</h3>
+                        <span className='text-[#737373] font-semibold text-lg'>WE CANT WAIT TO MEET YOU!</span>
+                        <h3 className='text-[#252B42] font-bold text-[54px]'>Lets Talk</h3>
                     </div>
                     <Link href={""}><button className="bg-[#23a6f0] text-white text-sm font-bold py-[15px] px-[25px] transition-transform transform hover:translate-y-0 active:translate-y-1 rounded-md flex items-center gap-2">
                         Try it free now

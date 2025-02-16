@@ -37,34 +37,44 @@ const Blog = () => {
 <div id='team' className="w-full h-auto flex justify-center my-5 flex-wrap md:flex-row flex-col gap-2">
           {/* Large Image */}
           <div className="flex-1">
-            <img
+            <Image
               src="/Images/unsplash_Lks7vei-eAg.png"
               alt="Description"
               className="w-full h-auto transform transition duration-500 hover:scale-110"
+              width={300}
+              height={300}
             />
           </div>
 
           {/* Smaller Images */}
           <div className="flex flex-wrap gap-2 flex-1">
-            <img
+            <Image
               src="/Images/unsplash_gMsnXqILjp4.png"
               alt="Description"
               className="w-[49%] object-cover transform transition duration-500 hover:scale-110"
+              width={300}
+              height={300}
             />
-            <img
+            <Image
               src="/Images/unsplash_1-aA2Fadydc.png"
               alt="Description"
               className=" w-[49%] object-cover transform transition duration-500 hover:scale-110"
+              width={300}
+              height={300}
             />
-            <img
+            <Image
               src="/Images/unsplash_mcSDtbWXUZU.png"
               alt="Description"
               className=" w-[49%] object-cover transform transition duration-500 hover:scale-110"
+              width={300}
+              height={300}
             />
-            <img
+            <Image
               src="/Images/unsplash_PSmDDeXaEWE.png"
               alt="Description"
               className="w-[49%] object-cover transform transition duration-500 hover:scale-110"
+              width={300}
+              height={300}
             />
           </div>
         </div>

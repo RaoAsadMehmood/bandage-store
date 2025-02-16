@@ -6,6 +6,7 @@ import { SiYoutube } from "react-icons/si";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import Link from 'next/link';
+import ShimmeringText from './ShimmeringText';
 
 const Header = () => {
     return (
@@ -15,25 +16,29 @@ const Header = () => {
                 {/* Left Section - Hidden on mobile */}
                 <div className='hidden md:flex items-center gap-4'>
                     <div className='flex items-center gap-1'>
-                        <IoCallOutline size={16} />
+                        <IoCallOutline size={20} />
                         <p>(225) 555-0118</p>
                     </div>
                     <div className='flex items-center gap-1'>
-                        <CiMail size={16} />
+                        <CiMail size={20} />
                         <a href="mailto:michelle.rivera@example.com"><p>michelle.rivera@example.com</p></a>
                     </div>
                 </div>
                 {/* Center Section - Hidden on mobile */}
                 <div className='hidden md:block'>
-                    <p>Follow Us and get a chance to win 80% off</p>
+                    {/* <p className= {'text-lg font-bold text-white [text-shadow:0_0_10px_#00ff00,0_0_20px_#00ff00,0_0_40px_#00ff00]'}>Follow Us and get a chance to win 80% off</p> */}
+
+                    <ShimmeringText />
+                    
+
                 </div>
                 {/* Right Section - Hidden on mobile */}
                 <div className='hidden md:flex items-center gap-2'>
                     <p>Follow Us:</p>
                     <Link href={""}>  <FaInstagram size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110' /></Link>
-                    <Link href={""}>  <SiYoutube size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110'/> </Link>
-                    <Link href={""}>  <FaFacebook size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110'/> </Link>
-                    <Link href={""}>  <FaTwitter size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110'/> </Link>
+                    <Link href={""}>  <SiYoutube size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110' /> </Link>
+                    <Link href={""}>  <FaFacebook size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110' /> </Link>
+                    <Link href={""}>  <FaTwitter size={20} className='hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110' /> </Link>
                 </div>
             </div>
         </>

@@ -166,7 +166,7 @@ const About = () => {
               </span>
 
               <h2 className="text-white font-bold text-3xl sm:text-4xl lg:text-[40px] leading-tight">
-                Now Let's grow Yours
+                Now Lets grow Yours
               </h2>
 
               <p className="text-white text-sm sm:text-[14px] font-light max-w-md">
@@ -177,7 +177,7 @@ const About = () => {
               </p>
 
               <button className="text-white border border-1 py-3 sm:py-[15px] px-8 sm:px-[40px] rounded-md transition-all duration-300 hover:bg-white hover:text-[#2a7cc7]                           active:translate-y-1">
-                Let's Connect
+                Lets Connect
               </button>
             </div>
           </div>

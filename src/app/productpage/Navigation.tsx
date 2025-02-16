@@ -9,6 +9,7 @@ import { IoHeartOutline, IoCallOutline } from "react-icons/io5";
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import { SiYoutube } from "react-icons/si";
 import { HiMenu, HiX } from "react-icons/hi";
+import ShimmeringText from "../components/ShimmeringText";
 
 interface NavItem {
   label: string;
@@ -34,9 +35,9 @@ const MobileMenu = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
     >
       <div className="bg-white h-full w-64 shadow-lg">
         <div className="flex justify-between items-center p-4 border-b">
-          <h3 className="text-xl font-bold text-[#252B42]">Bandage</h3>
+          <h3 className="text-3xl font-bold text-[#252B42]">Bandage</h3>
           <button onClick={onClose} className="text-gray-600">
-            <HiX size={24} />
+            <HiX size={22} />
           </button>
         </div>
 
@@ -64,14 +65,14 @@ const MobileMenu = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
               className="flex items-center gap-2 text-[#23A6F0] py-2"
               onClick={onClose}
             >
-              <VscAccount size={20} />
-              <span>Login / Register</span>
+              <VscAccount size={22} />
+              <span className="text-lg">Login / Register</span>
             </Link>
 
             <div className="flex items-center gap-4 text-gray-600">
-              <CiSearch size={20} />
-              <BsCart2 size={20} />
-              <IoHeartOutline size={20} />
+              <CiSearch size={22} />
+              <BsCart2 size={22} />
+              <IoHeartOutline size={22} />
             </div>
           </div>
         </nav>
@@ -97,29 +98,31 @@ const Navigation = () => {
       <div className="hidden md:flex pl-[144px] pr-[169px] text-[#FFFFFF] bg-[#23856d] w-full h-[58px] items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1 text-[#FFFFFF]">
-            <IoCallOutline size={16} />
-            <span className="text-[12px]">(225) 555-0118</span>
+            <IoCallOutline size={22} />
+            <span className="text-sm">(225) 555-0118</span>
           </div>
           <div className="flex items-center gap-1 text-[#FFFFFF]">
-            <CiMail size={16} />
-            <span className="text-[12px]">michelle.rivera@example.com</span>
+            <CiMail size={22} />
+            <span className="text-sm">michelle.rivera@example.com</span>
           </div>
         </div>
-        <h3 className="font-bold text-[14px]">Follow Us and get a chance to win 80% off</h3>
+        
+        <ShimmeringText />
+
         <div className="flex items-center gap-3">
-          <p className="text-[12px] font-bold">Follow Us:</p>
+          <p className="text-[14px] font-bold">Follow Us:</p>
           <div className="flex items-center gap-3">
             <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110 ">
-              <FaInstagram size={20} />
+              <FaInstagram size={22} />
             </Link>
             <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110 ">
-              <SiYoutube size={20} />
+              <SiYoutube size={22} />
             </Link>
             <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110 ">
-              <FaFacebook size={20} />
+              <FaFacebook size={22} />
             </Link>
             <Link href="" className="text-[#FFFFFF] hover:text-[#23A6F0] hover:transform transition duration-500 hover:scale-110">
-              <FaTwitter size={20} />
+              <FaTwitter size={22} />
             </Link>
           </div>
         </div>
@@ -136,7 +139,7 @@ const Navigation = () => {
           <div className="hidden md:flex">
             <ul className="flex justify-center items-center gap-4 text-[#737373]">
               {navItems.map((item) => (
-                <li key={item.label}>
+                <li key={item.label} className="text-lg">
                   <Link
                     href={item.href}
                     className={`${pathname === item.href
@@ -153,18 +156,18 @@ const Navigation = () => {
 
           {/* Desktop Account Section */}
           <div className="hidden md:flex items-center gap-2 text-[#23A6F0]">
-            <VscAccount size={20} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" />
+            <VscAccount size={22} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" />
             <Link href={""}>
-              <span>Login / Register</span>
+              <span className="text-[14px]">Login / Register</span>
             </Link>
             <Link href={""}>
-              <CiSearch size={20} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" />
+              <CiSearch size={22} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" />
+            </Link>
+            <Link href={"/cart"}>
+              <BsCart2 size={22} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" />
             </Link>
             <Link href={""}>
-              <BsCart2 size={20} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" />
-            </Link>
-            <Link href={""}>
-              <IoHeartOutline size={20} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" />
+              <IoHeartOutline size={22} className="hover:transform transition duration-500 hover:scale-110 hover:text-[26px]" />
             </Link>
           </div>
 
@@ -173,7 +176,7 @@ const Navigation = () => {
             onClick={() => setIsMenuOpen(true)}
             className="md:hidden text-gray-600"
           >
-            <HiMenu size={24} />
+            <HiMenu size={22} />
           </button>
         </div>
       </div>

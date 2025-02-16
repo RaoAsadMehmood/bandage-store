@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import ProductCard from './ProductCard';
 import Header from './Header';
 import Navbar1 from './Navbar1';
 import ArticleCard from './ArticleCard';
@@ -102,7 +101,7 @@ const HeroPage = () => {
 
 
       <div className="flex flex-col max-w-full overflow-x-hidden items-center justify-center pt-[80px] mb-[48px] bg-[#FAFAFA]">
-        <h3 className="text-3xl font-bold text-[#252B42]">EDITOR'S PICK</h3>
+        <h3 className="text-3xl font-bold text-[#252B42]">EDITORS PICK</h3>
         <span className="text-[#737373] text-lg text-center mt-2">
           Problems trying to resolve the conflict between
         </span>
@@ -229,6 +228,9 @@ const HeroPage = () => {
         </div>
 
 
+        
+
+
         <div className="bg-[#23856D] w-full min-h-screen flex flex-col lg:flex-row justify-center items-center px-4 py-8">
           {/* Text Content */}
           <div className="flex flex-col space-y-4 lg:space-y-7 max-w-xl text-center lg:text-left">
@@ -265,10 +267,12 @@ const HeroPage = () => {
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center max-w-7xl mx-auto px-4 py-8">
           {/* Image Section */}
           <div className="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0">
-            <img
+            <Image
               src="/Images/asian-woman-man-with-winter-clothes 1.png"
               alt="Couple in winter clothes"
               className="object-cover w-3/4 lg:w-full h-auto"
+              width={500}
+              height={500}
             />
           </div>
 

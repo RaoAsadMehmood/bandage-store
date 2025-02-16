@@ -10,6 +10,8 @@ import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
 
 import Navigation from './Navigation';
+import Products from "./Products";
+import Image from "next/image";
 
 interface Product {
   _id: string;
@@ -78,7 +80,7 @@ const ProductPage = () => {
             className="w-[206px] h-[233px] relative overflow-hidden group hover:scale-110 shadow-md hover:shadow-lg transition-all duration-500 ease-in-out"
           >
             {product.productImage && (
-              <img
+              <Image
                 src={urlFor(product.productImage).url()}
                 alt={product.title}
                 width={206}
@@ -134,29 +136,9 @@ const ProductPage = () => {
           </Link>
         </div>
       </div>
-
-     
-
-      {/* Featured Products Section */}
-      <div className='my-[80px] flex justify-around items-center gap-[29.5px] flex-wrap mx-[38px]'>
-        {[
-          ['fixed-height (2).png', 'Classic Graduandas'],
-          ['fixed-height (1).png', 'Embossed Knit'],
-          ['fixed-height (3).png', 'Summer Collection'],
-          ['fixed-height (5).png', 'Printed T-shirt']
-        ].map(([img, name]) => (
-          <ProductCard
-            key={name}
-            imageSrc={`/Images/${img}`}
-            productName={name}
-            department={'Premium Collection'}
-            originalPrice={16.48}
-            salePrice={6.48}
-          />
-        ))}
-      </div>
       
-
+      <Products  />
+      
       {/* Pagination */}
       <div className="flex justify-center space-x-2 my-[48px]">
         {['First', '1', '2', '3', 'Next'].map((label) => (

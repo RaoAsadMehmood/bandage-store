@@ -66,16 +66,17 @@ const CartPage = () => {
     const handleProceed = () =>{
         Swal.fire({
             title: "Processing your order...",
-            text: "Please wait a moment ✋",
+            text: "You're being redirected to the checkout page",
             icon: "info",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Procees",
 
-        }).then((result) =>{
+        })
+        .then((result) =>{
             if(result.isConfirmed){
-                Swal.fire("Success", "Your order has been successfully processed", "success")
+                Swal.fire("Success", " ", "success")
 
                 router.push("/checkout");
                 // CLear the cart after proceeding (optional) 
@@ -92,7 +93,7 @@ const CartPage = () => {
             <div className="p-4 max-w-2xl mx-auto">
                 <h1 className="text-2xl font-bold mb-4 text-[#252B42]">Your Shopping Cart</h1>
                 {cartItems.length === 0 ? (
-                    <p className="text-[#737373] text-sm">Seems like your cart is empty, but don't worry, let's add some products!
+                    <p className="text-[#737373] text-sm">Seems like your cart is empty, but dont worry, lets add some products!
                         <Link href="/productpage" className='font-bold text-[#737373]'> Shop Now!</Link>
                     </p>
                 ) : (

@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 import { client } from "@/sanity/lib/client";
 import { Product } from "../../../../types/products";
 import { groq } from "next-sanity";

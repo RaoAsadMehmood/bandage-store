@@ -29,7 +29,7 @@ const Navbar1 = () => {
                 <div className="flex items-center justify-between font-medium text-sm">
                     {/* Brand Name */}
                     <Link href={`/`}>
-                        <h3 className="text-2xl font-bold text-[#252B42]">Bandage</h3>
+                        <h3 className="text-3xl font-bold text-[#252B42]">Bandage</h3>
                     </Link>
 
                     <div className="hidden md:flex items-center gap-4 text-[#737373]">

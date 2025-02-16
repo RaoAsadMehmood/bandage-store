@@ -55,7 +55,7 @@ const FAQSection = () => {
       </div>
 
       <div className="text-center mt-8 text-gray-600">
-        Haven't got your answer? Contact our support
+        Havent got your answer? Contact our support
       </div>
 
       {/* Mobile responsiveness */}

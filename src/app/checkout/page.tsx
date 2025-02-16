@@ -101,8 +101,8 @@ const Checkout = () => {
             zipCode: formValues.zipCode,
             city: formValues.city,
             cartItems: cartItems.map(item => ({
-                type: "reference",
-                ref: item._id,
+                _type: "reference",
+                _ref: item._id,
             })),
             total: subTotal - discount,
             discount: discount,
