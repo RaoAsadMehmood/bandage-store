@@ -303,14 +303,6 @@ const ProductGrid = ({ initialProducts = [] }: ProductGridProps) => {
                 </p>
 
                 <div className="flex justify-between items-center mt-auto">
-                  {/* <span className={`text-sm ${
-                    product.stock > 0 ? 'text-green-600' : 'text-red-600'
-                  }`}>
-                    {product.stock > 0 ? 
-                      `${product.stock} in stock` : 
-                      'Out of stock'
-                    }
-                  </span> */}
                   <button
                       className="mt-auto w-full text-[#252B42] border border-[#252B42] py-3 px-3 rounded-md 
                transition-colors duration-200 font-semibold text-lg"
