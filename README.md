@@ -1,37 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Welcome to  Bandage Store, where elegance meets convenience! 
 
-## Getting Started
+This project is a modern e-commerce platform designed for furniture lovers. Whether you're looking for a cozy sofa, a stylish dining table, or a sleek bookshelf, this marketplace guarantees a smooth and enjoyable online shopping experience.
 
-First, run the development server:
+🚀 Features
+✅ Beautifully Crafted UI – A clean and intuitive interface for easy browsing.
+✅ Dynamic Product Listings – Discover a constantly growing collection of furniture pieces.
+✅ Real-Time Inventory Management – Only available products are displayed.
+✅ Secure Checkout & Payment – Multiple payment options for a seamless purchase.
+✅ Wishlist & Cart Functionality – Save your favorites and shop at your own pace.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+🛠️ Tech Stack
+Frontend: Next.js, TypeScript, Tailwind CSS
+Backend & CMS: Sanity CMS
+State Management: Context API
+Deployment: Vercel
+🎯 Why This Project?
+Finding the perfect furniture online can be tough – mismatched styles, unreliable sellers, and unclear pricing can complicate things. This platform tackles these issues by offering a seamless, visually appealing, and user-friendly shopping experience.
+
+
+---
+## 🚀 Getting Started  
+### **1️⃣ Clone the Repository**  
+```sh
+git clone https://github.com/your-repo/marketplace-store.git
+cd marketplace-store
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2️⃣ Install Dependencies**  
+```sh
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **3️⃣ Set Up Environment Variables**  
+Create a `.env.local` file and add your API keys, database credentials, and other configurations.  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### **4️⃣ Run the Development Server**  
+```sh
+npm run dev
+```
+The application will be available at **http://localhost:3000**  
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Deployment  
+This project can be deployed using **Vercel, Netlify, or any cloud provider**. Run the following command for a production build:  
+```sh
+npm run build
+```
+Then, deploy the output folder to your preferred hosting service.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+💡 This is just the beginning! Future updates will bring AR furniture previews, customization options, and much more!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# GIAIC-hackathon" 
+📢 Interested in contributing or sharing feedback? Feel free to reach out! 🚀
